@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Cards</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="catalog">
+      <header class="catalog__header">
+        <h1 class="catalog__heading">
+          Pokémon Cards
+          <img
+            class="logo"
+            src="https://image.flaticon.com/icons/svg/528/528098.svg"
+          />
+        </h1>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="search__input"
+            placeholder="Search Card..."
+            autocomplete="off"
+          />
+        </div>
+      </header>
+      <section class="catalog__content" data-content></section>
+      <footer class="catalog__footer">
+        <button class="catalog__button" data-button>
+          Load more
+        </button>
+        <div class="catalog__loader hide" data-loader>
+          Loading
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
